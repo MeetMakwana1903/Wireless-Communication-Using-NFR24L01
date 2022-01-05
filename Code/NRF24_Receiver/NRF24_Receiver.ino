@@ -37,7 +37,7 @@ void loop()
       Serial.println((char*)buf);
       
       // Send a reply
-      uint8_t data[] = "Good Morning Students";
+      uint8_t data[] = "I am fine thank you.";
       nrf24.send(data, sizeof(data));
       nrf24.waitPacketSent();
       Serial.println("Sent a reply");
